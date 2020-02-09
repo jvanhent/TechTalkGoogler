@@ -10,6 +10,8 @@ hey -z 30s -c 500 -host helloworld-go.default.example.com http://localhost/
 
 
 ### repeat
+    kind create cluster
+    kubectl config set-cluster kind-kind
 go run main.go 
 docker build . -t jvanhent/hello:v1
 docker run --rm -it jvanhent/hello:v1

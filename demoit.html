@@ -66,7 +66,33 @@
 <h1>Skaffold</h1>
 <split-view>
     <web-term path="skaffold"></web-term>
+    <source-code folder="skaffold" files="main.go Dockerfile k8s/pod.yaml skaffold.yaml" start-lines=";;;" end-lines=";;;">
+    </source-code>
 </split-view>
+
+---
+
+<h1>Skaffold Combined with Knative</h1>
+<split-view>
+    <web-term path="skaffoldKnative"></web-term>
+    <source-code folder="skaffoldKnative" files="index.js Dockerfile k8s/pod.yaml skaffold.yaml" start-lines=";;;" end-lines=";;;">
+    </source-code>
+</split-view>
+
+---
+
+<h1>Writing (good) Dockerfiles is hard</h1>
+<split-view>
+    <source-code folder="goodDockerFiles" files="java/Dockerfile node/Dockerfile go/Dockerfile" start-lines="" end-lines="">
+    </source-code>
+</split-view>
+
+---
+
+<h1>Dockerfiles</h1>
+<div class="logos">
+    <img src="/images/Dockerfiles.png" />
+</div>
 
 ---
 
